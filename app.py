@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, redirect, request
 from fastai.text.all import *
 import sentencepiece
 
-ORT = int(os.environ.get('PORT', 5000))
+PORT = int(os.environ.get('PORT', 5000))
 
 app = Flask(__name__)
 app.config.from_object(__name__)
