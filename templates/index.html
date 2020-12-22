@@ -1,0 +1,21 @@
+<html>
+ <body>
+  <h1> Genre Classifier</h1>
+  Willkommen beim Genre-Classifier für deutsche Musik. Füge im Feld unten einfach die Lyrics eines deutschen Songs ein, um zu erfahren, welchem Genre der Text am ehesten entspricht.
+  
+  <p>Derzeit unterstützte Genres:</p>
+         <nav>
+           <ul>
+             <li>Hip-Hop</li>
+             <li>Pop</li>
+             <li>Schlager</li>
+           </ul>
+         </nav>	
+  <form action="{{ url_for('lyrics') }}" method="post" class="lyrics" id="textzeilen">
+    Lyrics:<br><br>
+  <textarea id="textzeilen" rows="30" cols="60" name="lyrics"></textarea>
+  <br><br><br>
+    <input class="button" type="submit" value="Go!">
+  </form>
+ </body>
+</html>
