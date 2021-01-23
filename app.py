@@ -27,9 +27,9 @@ def lyrics():
 
     if pred == "Hip-Hop":
         return render_template("hiphop.html", pred=pred)
-    if pred == "Pop":
+    elif pred == "Pop":
         return render_template("pop.html", pred=pred)
-    if pred == "Schlager":
+    elif pred == "Schlager":
         return render_template("schlager.html", pred=pred)
 
 
